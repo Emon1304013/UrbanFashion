@@ -1,0 +1,627 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: sans-serif;
+}
+
+/*Navigation Bar styling starts here*/
+nav{
+    
+    margin-top:10px;
+    margin-left:135px;
+    margin-right: 135px;
+    height: 100px;
+}
+label.logo{
+    margin-top:20px;
+    line-height: 80px;
+}
+.logo img{
+    height: 60px;
+    width: 118px;
+}
+nav ul{
+    float:right;
+    height: 25px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin:0 10px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #6E98A6;
+}
+li.active{
+    color: #E4E0B1;
+}
+
+.sub-menu{
+    display: none;
+    position: absolute;
+    top: 110px;
+    left: 135px;
+    background-color: #f9f9f9;
+    z-index: 1;
+    width:1170px;
+    border-top:2px solid #6E98A6;
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+.main-menu:hover .sub-menu{
+    display: block;
+}
+/*Creating 4 equal columns that float next to each other*/
+
+.column{
+    float: left;
+    width:63px 70px 91px 125px 582px;
+    column-gap:20px;
+    margin-top:40px;
+    margin-left: 40px;
+
+}
+.column a{
+    font-family: 'Open Sans','sans-serif';
+    font-size:14px;
+    float: none;
+    color: rgba(0,0,0,0.5);
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    line-height: 27px;
+    font-style: normal;
+    font-weight: normal;
+
+
+}
+.column h3{
+    font-family: 'Playfair Display', serif;
+    font-size:20px;
+    font-weight: 700;
+    color: #6E98A6;
+    line-height: 27px;
+    padding-bottom: 20px;
+}
+.offer{
+    margin-top:10px;
+}
+.displayImage{
+    margin-left: 60px;
+}
+
+.searchBox{
+    position: relative;
+    display: flex;
+}
+.searchInput{
+    width: 302px;
+    border:none;
+    border-bottom:1px solid #6E98A6;
+}
+.searchButton{
+    background-color: white;
+    border:none;
+    border-bottom:1px solid #6E98A6;
+    color: #6E98A6;
+}
+
+.feather-20{
+    height: 20px;
+    width: 18px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.avatar{
+    height: 30px;
+    width: 30px;
+    border:1px solid #6E98A6;
+    border-radius: 50%;
+}
+/*Navigation Bar styling ends here*/
+
+/*Slider Section styling starts here*/
+
+.slider{
+    margin:0 40px;
+    display: grid;
+    grid-template-columns: 765px 595px;
+    /* position: relative;
+    display: flex; */
+}
+.sliderImage img{
+    height: 500px;
+    width: 100%;
+}
+.sliderText{
+    background-color: #6E98A6;
+    font-family: 'Playfair Display', serif;
+    height: 500px;
+    width:100%;
+    border:1px solid #6E98A6;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.sliderText h1{
+    color:white;
+    width: 393px;
+    line-height: 56px;
+    font-size: 42px;
+    font-weight: bold;
+    font-style: normal;
+    margin-top:93px;
+    margin-left:30px;   
+}
+.sliderText p{
+    font-family: 'Open Sans', sans-serif;
+    width:501px;
+    height: 72px;
+    line-height: 24px;
+    font-size: 16px;
+    color: white;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-style:normal;
+    font-weight: normal;
+}
+
+.sliderText button{
+    width: 190px;
+  height: 60px;
+  background: #DAD398;
+  border:1px solid #DAD398;
+  border-radius: 5px;
+  color: white;
+  font-size: 24px;
+  margin-top:50px;
+  margin-left:30px;
+}
+.sliderText img{
+    position: absolute;
+    width: 198px;
+    height: 198px;
+    margin-left: 150px;
+}
+
+
+/* Summer Section styling starts here*/
+
+.sectionSummer{
+    margin-top:30px;
+    margin-left: 135px;
+    display: grid;
+    grid-template-columns: 570px 570px;
+    grid-template-rows: 270px 270px;
+    grid-gap: 20px;
+}
+
+  
+  .sectionSummer img{
+    height: 100%;
+    width: 570px;
+  }
+
+  .sectionSummer .image1{
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+  .sectionSummer .image2{
+    grid-row: 1/3;
+    grid-column: 2/3;
+  }
+  .sectionSummer .image3{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    position: relative;
+  }
+
+  .textFashion{
+      position: absolute;
+      top: 24px;
+      left: 24px;
+      width: 162px;
+      line-height: 26px;
+      font-size: 30px;
+      color: white;
+      font-weight: bold;
+      font-family: 'Playfair Display', serif;
+  }
+
+  .textFashion p:nth-child(odd)
+  {
+      color:white;
+  }
+  .textFashion p:nth-child(even)
+  {
+      color:#DED99F;
+  }
+
+  .textCosmetics{
+    position: absolute;
+    width: 119px;
+    height: 42px;
+    top: 202px;
+    left: 24px;
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    line-height:87%; 
+    font-family: 'Pathway Gothic One', sans-serif;
+  }
+/*Summer Section styling ends here*/
+
+/*Gallery Styling Starts Here*/
+.bestSellingProducts{
+    position: relative;
+}
+.bestSellingProducts .designImage{
+    position: absolute;
+    left:40px;
+    top:30px;
+    z-index: -1;
+}
+
+.bestSellingProducts .header{
+    margin-top: 70px;
+    text-align: center;
+}
+.bestSellingProducts .header h3{
+    /* width: 585px; */
+    height: 56px;
+    color: #6E98A6;
+    font-size: 42px;
+    font-family: Playfair Display;
+    line-height: 56px;
+    font-weight: bold;
+}
+.bestSellingProducts .header p{
+    line-height: 27px;
+    font-size: 20px;
+    color: #DAD398;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.productGallery{
+    margin: 40px 135px 70px 135px;
+    display: grid;
+    grid-template-columns: repeat(3,370px);
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 30px;
+  }
+  
+.productGallery .product3, .productGallery .product6{
+    position: relative;
+}
+.productGallery .product3 .designImage{
+    position: absolute;
+    left: 320px;
+    top:381px;
+    }
+    .productGallery .product3 .rightArrow, .productGallery .product6 .rightArrow{
+        position: absolute;
+        top:160px;
+        left:344px;
+    }
+  .productGallery img{
+    height: 370px;
+    width: 370px;
+  }
+  .productGallery h4{
+    color: #6E98A6;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 29px;
+    margin:20px 0px 10px 0px;
+  }
+  .productGallery p{
+    font-size: 18px;
+    color: #6E98A6;
+    line-height: 25px;
+    font-weight: 400;
+    margin: 10px 0px 10px 0px;
+  }
+  .productGallery .price p
+  {
+    font-weight: 600px;
+    color: #B66251;
+  }
+  .productGallery .price .discountedPrice
+  {
+    margin-left:10px;
+    text-decoration: line-through;
+    color: #769FAC;
+  }
+  .productGallery .price a{
+    font-size: 18px;
+    /* text-decoration: underline; */
+    color: #6E98A6;
+    margin:20px 0px 40px 0px;
+  }
+/*Gallery Styling Ends Here*/
+
+/*Testimonial Styling starts Here*/
+.testimonial{
+    margin-left:135px;
+    display: grid;
+    grid-template-columns: 570px 570px;
+    grid-gap: 30px;
+}
+.testimonialOne{
+    position: relative;
+}
+.quoteLeft{
+    position:absolute;
+    background-color: #DAD398;
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    left: 450px;
+    top: 326px;
+}
+.quoteLeft img{
+    height: 31px !important;
+    width: 46px !important;
+    margin:0 auto;
+}
+.testimonial p{
+    font-family: 'Open Sans', sans-serif;
+    height: 25px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    color: #DAD398;
+}
+.testimonial h3{
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 56px;
+    color: #6E98A6;
+    margin-bottom: 30px;
+}
+.testimonial img{
+    height: 270px;
+    width: 100%;
+}
+.testimonial h4{
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 29px;
+    color: #6E98A6;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.testimonial h6{
+    font-family: 'Open Sans','sans-serif';
+    font-weight: normal;
+    font-size: 18px;
+    line-height:25px;
+    color: #6E98A6;
+    margin-bottom: 10px;
+}
+.testimonialOne p.clientComment,.testimonialTwo p.clientComment{
+    font-family: 'Open Sans','sans-serif';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    width: 545px;
+    height: 81px;
+    line-height: 27px;
+    color: #767676;
+
+}
+.testimonialTwo{
+    position: relative;
+}
+.testimonialTwo .quoteLeft{
+    position: absolute;
+    left: 450px;
+    top: 230px;
+}
+
+.rightArrow{
+    background-color: #6E98A6;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #6E98A6;
+    border-radius: 50%;
+    position: absolute;
+    left: 520px;
+    top: 501px;
+    /* bottom:0; */
+}
+.rightArrow img{
+    width: 22.5px;
+    height: 14px;
+    
+    margin: 0 auto;
+}
+
+/*Testimonial Styling Ends Here*/
+
+/*Feature Styling Starts here*/
+.featuredIn{
+    margin: 70px 135px;
+}
+.featuredIn h3{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 56px;
+    color: #6E98A6;
+}
+.featuredImages img{
+    /* height: 100px;
+    width:100px; */
+    margin: 30px 80px 0px 0px ;
+}
+/*Feature Styling Ends here*/
+
+/*Footer Styling Ends here*/
+
+.footer{
+    background-color: #6E98A6;
+    height: 323px;
+    margin: 0px 40px 50px 40px;
+    border-radius: 10px;
+    
+    color: #FFF;
+}
+.footer .content{
+    margin: 0px 95px 40px 95px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap:25px;
+    
+}
+.footer .content>div{
+    margin-top:50px;
+}
+.companyName img{
+    height:60px;
+    width:120px;
+    margin-bottom: 30px;
+}
+.companyName ul{
+    margin-bottom: 20px;
+}
+.companyName ul li{
+    display: inline-block;
+    margin-right: 20px;
+
+}
+.companyName ul li a{
+    font-size: 20px;
+    /* width:20px;
+    height: 20px; */
+}
+
+.companyName p{
+    font-family: 'Opne Sans',sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    width: 284px;
+    line-height: 27px;
+    height: 81px;
+    font-style: normal;
+}
+
+.footer .menu li{
+    font-family: 'Opne Sans','sans-serif';
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 36px;
+
+}
+
+.footer .support li{
+    font-family: 'Opne Sans','sans-serif';
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 36px;
+
+}
+
+.footer .terms{
+    font-family: 'Opne Sans','sans-serif';
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 36px;
+}
+.footer .subscribe{
+    font-family: 'Opne Sans','sans-serif';
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 36px;
+}
+.footer .subscribe ul li{
+    font-family: 'Opne Sans','sans-serif';
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 36px;
+    margin-bottom: 20px;
+}
+.footer .subscribe li:nth-child(1)
+{
+    font-weight: bold;
+}
+
+.footer .subscribe .emailBox{
+    width: 200px;
+    border:none;
+    border-bottom: 1px solid #FFF;
+    background-color: #6E98A6;
+    position: relative;
+    display: flex;
+}
+.footer .subscribe .emailInput{
+    background-color: #6E98A6;
+    border: none;
+    color: white;
+    line-height: 14px;
+    width: 190px;
+    margin-bottom: 8px;
+}
+
+.emailInput::placeholder{
+    color: #FFF;
+    opacity: 1;
+    font-size: 10px;
+    line-height: 14px;
+}
+
+.footer .subscribe button{
+    border: none;
+    background-color: #6E98A6;
+    color: white;
+    margin-bottom: 8px;
+}
+.feather-14{
+    width: 14px;
+    height:9px;
+}
+.contact{
+    position: relative;
+   display: flex;
+
+}
+/* .contact .mailIcon{
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 16px;
+} */
+.contact .feather-20
+{
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 16px;
+}
+.contact .contactMail{
+    font-size:18px;
+    list-style: 25px;
+    margin-left: 10px;
+}
+/*Footer Styling Ends here*/
